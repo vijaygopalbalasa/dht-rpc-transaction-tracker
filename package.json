@@ -1,0 +1,33 @@
+{
+  "name": "dht-rpc-transaction-tracker",
+  "version": "0.1.0",
+  "description": "Deterministic request/response correlation for decoded DHT-RPC events",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "lib/",
+    "examples/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "lint": "node --check index.js && node --check lib/transaction-tracker.js && node --check examples/basic.js",
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage",
+    "example": "node examples/basic.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dht-rpc",
+    "hyperdht",
+    "holepunch",
+    "udp",
+    "p2p"
+  ],
+  "license": "MIT"
+}
